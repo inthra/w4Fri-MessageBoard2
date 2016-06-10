@@ -1,7 +1,19 @@
-# Message-board
+# Independent Project: Message-board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+### Ember
+
+#### Question and Answer Message Board, Jun 10, 2016
+
+#### By _Inthrayuth Mahaphol_
+
+## Description
+
+An app where user can post questions or answer message board.
+
+* Submited questions will have the content of the question, an author, and additional notes.
+* Answers will have the content of the answer and the author.
+* Users will be able to click on a question to view additional notes.
+* Users can add and edit questions or answers.
 
 ## Prerequisites
 
@@ -10,12 +22,10 @@ You will need the following things properly installed on your computer.
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
 * [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone or download <https://github.com/inthra/w3Fri-MessageBoard.git>` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -25,29 +35,25 @@ You will need the following things properly installed on your computer.
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+## Known Bugs
 
-Make use of the many generators for code, try `ember help generate` for more details
+If a bug is found, please let me know via Github.
 
-### Running Tests
+## Support and contact details
 
-* `ember test`
-* `ember test --server`
+Feel free to contact me with questions or suggestions and contribute to the code.
 
-### Building
+## Technologies Used
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+* Ember
+* Node.js - including npm and bower
+* Git
+* Github
+* Atom text editor
+* JavaScript
 
-### Deploying
+### License
 
-Specify what it takes to deploy your app.
+_This software is licensed under the MIT license_
 
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Copyright (c) 2016 Inthrayuth M.
