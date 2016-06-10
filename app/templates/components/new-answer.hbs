@@ -1,0 +1,22 @@
+{{#if addNewAnswer}}
+  <hr>
+  <h3>New Answer</h3>
+  <div class="row">
+    <form class="col-sm-6">
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author" class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="answer">Answer</label>
+        {{textarea value=answer id="answer" rows="5" class="form-control"}}
+      </div>
+
+      <button {{action 'saveAnswer'}} class="btn btn-success">Post Answer</button>
+    </form>
+  </div>
+{{else}}
+  <hr>
+  <button {{action 'answerFormShow'}} class="btn btn-default">Add Answer</button>
+{{/if}}
