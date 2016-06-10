@@ -1,0 +1,10 @@
+<h2>Latest question posts below</h2>
+
+<!-- {{new-post save="save"}} -->
+
+<ul>
+  {{#each model as |question|}}
+    <li>Question: {{question.topic}} by {{quesiton.author}}</li>
+    <li>Note: {{question.note}}</li>
+  {{/each}}
+</ul>

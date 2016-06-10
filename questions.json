@@ -1,0 +1,19 @@
+{ "questions": [{
+    "topic" : "What wrong with firebase and ember?",
+    "author" : "student77",
+    "note" : "Can't connect to firebase database when using ember2",
+    "answer": "I have the same problem"
+ }, {
+    "topic" : "What is API?",
+    "author" : "Picasso",
+    "note" : "My app require api key but I don't know what it is.",
+    "answer": "An API specifies how software components should interact"
+ }],
+  "answers": [{
+    "answer": "I have the same problem",
+    "author": "student80"
+ }, {
+    "answer": "Application program interface (API) is a set of routines, protocols, and tools for building software applications. An API specifies how software components should interact and APIs are used when programming graphical user interface (GUI) components.",
+    "author": "apiExpert"
+ }]
+}

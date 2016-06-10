@@ -4,6 +4,12 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'message-board',
     environment: environment,
+    firebase: {
+      apiKey: "AIzaSyDk6WemLnwrpB54SDxBAUv1d7qlYZka4Ok",
+      authDomain: "message-board-f80a1.firebaseapp.com",
+      databaseURL: "https://message-board-f80a1.firebaseio.com",
+      storageBucket: "message-board-f80a1.appspot.com",
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
