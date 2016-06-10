@@ -1,9 +1,9 @@
-<h2>Latest question posts below</h2>
+<h3>You can find the latest questions post below.</h3>
 
 <ul>
-  {{#each model as |question|}}
-
+  {{#each model.questions as |question|}}
+    <li>{{#link-to 'question' question.id}}{{question.topic}}{{/link-to}} by {{question.author}}</li>
   {{/each}}
 </ul>
 
-<!-- {{new-post save="save"}} -->
+{{new-question save="save"}}

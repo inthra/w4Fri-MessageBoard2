@@ -1,0 +1,10 @@
+{{question.topic}}
+
+Author: {{question.author}}
+Note: {{question.note}}
+
+<ul>
+  {{#each question.answers as |answer|}}
+    <li>{{#link-to 'answer' answer.id}}{{answer.author}} Answer: {{answer.answer}}{{/link-to}}</li>
+  {{/each}}
+</ul>
