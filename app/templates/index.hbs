@@ -2,8 +2,10 @@
 
 <ul>
   {{#each model.questions as |question|}}
-    <li>{{#link-to 'question' question.id}}{{question.topic}}{{/link-to}} by {{question.author}}</li>
+    <li>
+      <h5>{{#link-to 'question' question.id}}{{question.topic}}{{/link-to}} by {{question.author}}</h5>
+    </li>
   {{/each}}
 </ul>
 
-{{new-question save="save"}}
+{{new-question saveQuestion="saveQuestion"}}
