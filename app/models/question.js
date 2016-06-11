@@ -6,5 +6,5 @@ export default Model.extend({
   author: attr(),
   topic: attr(),
   note: attr(),
-  answers: hasMany('answer', {async: true})
+  answers: hasMany('answer', {async: true}),
 });

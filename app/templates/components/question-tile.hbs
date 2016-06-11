@@ -1,5 +1,5 @@
-<h3 {{action 'noteShow'}}>Question: {{question.topic}}</h3>
-{{#if isNoteShowing}}
-  <h4 {{action 'noteHide'}}>Additional Note: {{question.note}}</h4>
-{{/if}}
-<h4>By: {{question.author}}</h4>
+<ul>
+  {{#each questions as |question|}}
+    <li>{{#link-to 'question' question.id}}{{question.topic}}{{/link-to}} by {{question.author}}</li>
+  {{/each}}
+</ul>

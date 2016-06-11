@@ -1,11 +1,5 @@
 <h3>You can find the latest questions post below.</h3>
 
-<ul>
-  {{#each model.questions as |question|}}
-    <li>
-      <h5>{{#link-to 'question' question.id}}{{question.topic}}{{/link-to}} by {{question.author}}</h5>
-    </li>
-  {{/each}}
-</ul>
+{{question-tile questions=model.questions}}
 
 {{new-question saveQuestion="saveQuestion"}}

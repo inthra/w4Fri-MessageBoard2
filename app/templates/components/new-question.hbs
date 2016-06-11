@@ -4,18 +4,18 @@
   <div class="row">
     <form class="col-sm-6">
       <div class="form-group">
-        <label for="question">Question</label>
-        {{input value=question id="question" class="form-control"}}
+        <label for="questionInput">Question</label>
+        {{input value=questionInput id="questionInput" class="form-control"}}
       </div>
 
       <div class="form-group">
-        <label for="author">Author</label>
-        {{input value=author id="author" class="form-control"}}
+        <label for="authorInput">Author</label>
+        {{input value=authorInput id="authorInput" class="form-control"}}
       </div>
 
       <div class="form-group">
-        <label for="note">Additional Note</label>
-        {{textarea value=note id="note" rows="5" class="form-control"}}
+        <label for="noteInput">Additional Note</label>
+        {{textarea value=noteInput id="noteInput" rows="5" class="form-control"}}
       </div>
 
       <button {{action 'saveQuestion'}} class="btn btn-success">Add</button>
