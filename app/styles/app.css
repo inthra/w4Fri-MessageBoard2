@@ -7,3 +7,12 @@ footer {
   position: absolute;
   bottom: 15px;
 }
+.style-action:hover {
+  text-decoration: underline;
+  color: #3399ff;
+}
+
+.style-author {
+  font-size: 16px;
+  font-weight: normal;
+}

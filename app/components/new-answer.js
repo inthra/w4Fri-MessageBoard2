@@ -11,9 +11,12 @@ export default Ember.Component.extend({
       var params = {
         name: this.get('nameInput') ? this.get('nameInput') : "",
         reply: this.get('replyInput') ? this.get('replyInput') : "",
+        question: this.get('question'),
       };
       this.set('addNewAnswer', false);
       this.sendAction('saveAnswer', params);
+      this.set('nameInput', '');
+      this.set('replyInput', '');
     }
   }
 });

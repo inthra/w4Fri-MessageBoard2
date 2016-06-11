@@ -1,5 +1,20 @@
+<h3 {{action 'noteShow'}}><span class="style-action">{{question.topic}}</span><span class="style-author"> - by {{question.author}}</span></h3>
+
+{{#if isNoteShow}}
+  <p {{action 'noteHide'}}><span class="style-action">Additional Note:</span> {{question.note}}</p>
+{{/if}}
+
 <ul>
-  {{#each questions as |question|}}
-    <li>{{#link-to 'question' question.id}}{{question.topic}}{{/link-to}} by {{question.author}}</li>
+  {{#each question.answers as |answer|}}
+    <hr>
+    <div class="row">
+      <div class="col-sm-2">
+        <p>Reply by {{answer.name}}</p>
+      </div>
+
+      <div class="col-sm-8">
+        <p>{{answer.reply}}</p>
+      </div>
+    </div>
   {{/each}}
 </ul>
