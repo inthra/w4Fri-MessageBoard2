@@ -1,9 +1,7 @@
-{{question-tile question=model}}
-<div class="row">
-  <div class="col-sm-6">
-    {{new-answer saveAnswer="saveAnswer" question=model}}
-  </div>
-  <div class="col-sm-6">
-    {{update-question update="update" question=model}}
-  </div>
+<div class="container">
+  {{update-question update="update" question=model}}
+
+  {{question-tile question=model}}
+
+  {{new-answer saveAnswer="saveAnswer" question=model}}
 </div>

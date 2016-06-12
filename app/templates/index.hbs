@@ -1,9 +1,11 @@
-<h3>Message List</h3>
+<div class="container">
+  <h3>Message List</h3>
 
-<ul>
-  {{#each model.questions as |question|}}
-    <h5>{{#link-to 'question' question.id}}{{question.topic}}{{/link-to}} - by {{question.author}}</h5>
-  {{/each}}
-</ul>
+  <ul>
+    {{#each model.questions as |question|}}
+      <h5>{{#link-to 'question' question.id}}{{question.topic}}{{/link-to}} - by {{question.author}}</h5>
+    {{/each}}
+  </ul>
 
-{{new-question saveQuestion="saveQuestion"}}
+  {{new-question saveQuestion="saveQuestion"}}
+</div>

@@ -5,8 +5,10 @@ header h1 {
 
 footer {
   position: absolute;
-  bottom: 15px;
+  bottom: 20px;
+  margin-left: 450px;
 }
+
 .style-action:hover {
   text-decoration: underline;
   color: #3399ff;
@@ -15,4 +17,8 @@ footer {
 .style-author {
   font-size: 16px;
   font-weight: normal;
+}
+
+.navbar {
+  background-color: #e6f2ff;
 }

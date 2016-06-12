@@ -1,7 +1,8 @@
 {{#if addNewAnswer}}
-  <h4>New Answer</h4>
   <div class="row">
-    <form class="col-sm-8">
+    <form class="col-sm-8 col-sm-offset-1">
+      <h4>Add New Answer</h4>
+
       <div class="form-group">
         <label for="nameInput">Your name</label>
         {{input value=nameInput id="nameInput" class="form-control"}}
@@ -12,11 +13,11 @@
         {{textarea value=replyInput id="replyInput" class="form-control" rows="5"}}
       </div>
 
-      <button {{action 'saveAnswer'}} class="btn btn-success">Post Answer</button>
-      <span {{action 'cancel'}} class="btn btn-default">Cancel</span>
+      <button {{action 'saveAnswer'}} class="btn btn-success btn-sm">Post Answer</button>
+      <span {{action 'cancel'}} class="btn btn-default btn-sm">Cancel</span>
     </form>
   </div>
 {{else}}
   <br>
-  <button {{action 'answerFormShow'}} class="btn btn-default pull-right">Add Answer</button>
+  <button {{action 'answerFormShow'}} class="btn btn-default btn-sm">Add Answer</button>
 {{/if}}

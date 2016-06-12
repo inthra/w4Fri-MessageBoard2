@@ -1,12 +1,11 @@
 <h3 {{action 'noteShow'}}><span class="style-action">{{question.topic}}</span><span class="style-author"> - by {{question.author}}</span></h3>
 
 {{#if isNoteShow}}
-  <p {{action 'noteHide'}}><span class="style-action">Additional Note:</span> {{question.note}}</p>
+  <h5 {{action 'noteHide'}}><span class="style-action">Additional Note:</span> {{question.note}}</h5>
 {{/if}}
-
+<hr>
 <ul>
   {{#each question.answers as |answer|}}
-    <hr>
     <div class="row">
       <div class="col-sm-2">
         <p>Reply by {{answer.name}}</p>
