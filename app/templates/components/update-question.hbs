@@ -1,8 +1,7 @@
 {{#if updateFormShow}}
-  <hr>
   <div class="row">
-    <form class="col-sm-6">
-      <label for="editQuestionInput">Edit Question</label>
+    <form class="col-sm-8">
+      <h4>Edit Question</h4>
       {{input value=question.topic id="editQuestionInput" class="form-control"}}
       <br>
       <button {{action 'update' question}} class="btn btn-info">Confirm Edit</button>

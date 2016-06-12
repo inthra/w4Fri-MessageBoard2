@@ -1,8 +1,7 @@
 {{#if addNewAnswer}}
-  <hr>
-  <h3>New Answer</h3>
+  <h4>New Answer</h4>
   <div class="row">
-    <form class="col-sm-6">
+    <form class="col-sm-8">
       <div class="form-group">
         <label for="nameInput">Your name</label>
         {{input value=nameInput id="nameInput" class="form-control"}}
@@ -10,7 +9,7 @@
 
       <div class="form-group">
         <label for="replyInput">Answer</label>
-        {{input value=replyInput id="replyInput" class="form-control"}}
+        {{textarea value=replyInput id="replyInput" class="form-control" rows="5"}}
       </div>
 
       <button {{action 'saveAnswer'}} class="btn btn-success">Post Answer</button>
@@ -19,5 +18,5 @@
   </div>
 {{else}}
   <br>
-  <button {{action 'answerFormShow'}} class="btn btn-default">Add Answer</button>
+  <button {{action 'answerFormShow'}} class="btn btn-default pull-right">Add Answer</button>
 {{/if}}
