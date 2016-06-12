@@ -17,6 +17,11 @@ export default Ember.Component.extend({
     },
     cancel() {
       this.set('updateFormShow', false);
+    },
+    destroyQuestion(question) {
+      if (confirm('Are you sure you want to delete this question? Delete this question will delete all connected answers')) {
+        this.sendAction('destroyQuestion', question);
+      }
     }
   }
 });

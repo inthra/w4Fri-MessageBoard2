@@ -11,4 +11,5 @@
 {{else}}
   <br>
   <button {{action 'updateForm'}} class="btn btn-default btn-sm">Edit Question</button>
+  <span {{action 'destroyQuestion' question}} class="btn btn-default btn-sm">Delete Question</span>
 {{/if}}
