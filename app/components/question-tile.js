@@ -10,5 +10,10 @@ export default Ember.Component.extend({
     noteHide() {
       this.set('isNoteShow', false);
     },
+    destroyAnswer(answer) {
+      if (confirm('Are you sure you want to delete this answer?')) {
+        this.sendAction('destroyAnswer', answer);
+      }
+    }
   }
 });
