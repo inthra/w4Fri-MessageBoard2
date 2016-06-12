@@ -18,6 +18,12 @@ export default Ember.Component.extend({
       this.set('questionInput', '');
       this.set('authorInput', '');
       this.set('noteInput', '');
-    }
+    },
+    cancel() {
+      this.set('addNewQuestion', false);
+      this.set('questionInput', '');
+      this.set('authorInput', '');
+      this.set('noteInput', '');
+    },
   }
 });

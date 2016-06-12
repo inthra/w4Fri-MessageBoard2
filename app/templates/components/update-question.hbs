@@ -1,0 +1,15 @@
+{{#if updateFormShow}}
+  <hr>
+  <div class="row">
+    <form class="col-sm-6">
+      <label for="editQuestionInput">Edit Question</label>
+      {{input value=question.topic id="editQuestionInput" class="form-control"}}
+      <br>
+      <button {{action 'update' question}} class="btn btn-info">Confirm Edit</button>
+      <span {{action 'cancel'}} class="btn btn-default">Cancel</span>
+    </form>
+  </div>
+{{else}}
+  <br>
+  <button {{action 'updateForm'}} class="btn btn-default">Edit Question</button>
+{{/if}}

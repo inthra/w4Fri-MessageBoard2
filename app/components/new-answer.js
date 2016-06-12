@@ -6,7 +6,6 @@ export default Ember.Component.extend({
     answerFormShow() {
       this.set('addNewAnswer', true);
     },
-
     saveAnswer() {
       var params = {
         name: this.get('nameInput') ? this.get('nameInput') : "",
@@ -17,6 +16,11 @@ export default Ember.Component.extend({
       this.sendAction('saveAnswer', params);
       this.set('nameInput', '');
       this.set('replyInput', '');
-    }
+    },
+    cancel() {
+      this.set('addNewAnswer', false);
+      this.set('nameInput', '');
+      this.set('replyInput', '');
+    },
   }
 });
