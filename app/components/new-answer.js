@@ -9,7 +9,7 @@ export default Ember.Component.extend({
     saveAnswer() {
       var params = {
         name: this.get('nameInput') ? this.get('nameInput') : "Robot",
-        reply: this.get('replyInput') ? this.get('replyInput') : "No answer",
+        reply: this.get('replyInput') ? this.get('replyInput') : "Robot answer",
         question: this.get('question'),
       };
       this.set('addNewAnswer', false);

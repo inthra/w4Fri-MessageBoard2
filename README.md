@@ -2,7 +2,8 @@
 
 ### Ember
 
-#### Question and Answer Message Board, Jun 10, 2016
+#### Question and Answer Message Board, Jun 17, 2016
+- past version on Jun 10, 2016
 
 #### By _Inthrayuth Mahaphol_
 

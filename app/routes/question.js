@@ -8,9 +8,7 @@ export default Ember.Route.extend({
   actions: {
     saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
-      console.log(params);
       var question = params.question;
-      console.log(question);
       question.get('answers').addObject(newAnswer);
       newAnswer.save().then(function() {
         return question.save();
@@ -24,7 +22,7 @@ export default Ember.Route.extend({
         }
       });
       question.save();
-      this.transitionTo('index');
+      this.transitionTo('question', question.id);
     },
     destroyQuestion(question) {
       var question_deletions = question.get('answers').map(function(answer) {

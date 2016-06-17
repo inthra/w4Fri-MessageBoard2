@@ -2,7 +2,7 @@
   <form class="form-group">
     <div class="form-inline">
       <label>Edit Question: </label>
-      {{input value=question.topic id="editQuestionInput"}}
+      {{textarea value=question.topic id="editQuestionInput" class="form-control" rows=2}}
       <button {{action 'update' question}} class="btn btn-info btn-sm">Confirm</button>
       <span {{action 'cancel'}} class="btn btn-default btn-sm">Cancel</span>
     </div>

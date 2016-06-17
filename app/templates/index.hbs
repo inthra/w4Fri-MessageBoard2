@@ -1,18 +1,21 @@
 <div>
+  <h3>Active Threads</h3>
   {{#each model.questions as |question|}}
     <div class="row userQuestionBox">
-      <div class="col-xs-7 userTopic">
-        <h4>{{#link-to 'question' question.id}}{{question.topic}}{{/link-to}}</h4>
+      <div class="col-xs-7">
+        <h4>
+          {{question-popularity question}}<span> </span>
+          {{#link-to 'question' question.id}}{{question.topic}}{{/link-to}}
+        </h4>
         <p>Ask by {{question.author}}</p>
       </div>
 
-      <div class="col-xs-4 userPost">
-        <h5>Post date go here</h5>
+      <div class="col-xs-4">
+        <h5>Last post date go here</h5>
+        <h5>Number of answers go here</h5>
       </div>
     </div>
   {{/each}}
 </div>
 
-<div class="col-xs-6">
-  {{new-question saveQuestion="saveQuestion"}}
-</div>
+{{new-question saveQuestion="saveQuestion"}}

@@ -1,6 +1,7 @@
-{{#if addNewQuestion}}
-  <h3>New Question</h3>
-    <form>
+<div class="row">
+  {{#if addNewQuestion}}
+    <form class="col-xs-6 col-xs-offset-1">
+      <h3>New Question</h3>
       <div class="form-group">
         <label for="questionInput">Question</label>
         {{input value=questionInput id="questionInput" class="form-control"}}
@@ -19,7 +20,8 @@
       <button {{action 'saveQuestion'}} class="btn btn-success">Add</button>
       <span {{action 'cancel'}} class="btn btn-default">Cancel</span>
     </form>
-{{else}}
-  <br>
-  <button {{action 'questionFormShow'}} class="btn btn-info btn-sm">Add a New Question</button>
-{{/if}}
+  {{else}}
+    <br>
+    <button {{action 'questionFormShow'}} id="add-button">Add a New Question</button>
+  {{/if}}
+</div>

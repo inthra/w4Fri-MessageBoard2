@@ -41,11 +41,23 @@ footer {
   width: 100%;
 }
 
-.userTopic {
-  padding-left: 20px;
-}
-
 .styleTopBottom {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+#editQuestionInput {
+  width: 55%;
+}
+
+.glyphicon-fire {
+  color: #E60B00;
+}
+
+#add-button {
+  background-color: #5bc0de;
+  border-radius: 3px;
+  border-style: none;
+  color: white;
+  padding: 10px;
 }
