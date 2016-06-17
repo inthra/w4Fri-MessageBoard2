@@ -1,9 +1,14 @@
-<h3 {{action 'noteShow'}}><span class="style-action">{{question.topic}}</span><span class="style-author"> - by {{question.author}}</span></h3>
-
-{{#if isNoteShow}}
-  <h5 {{action 'noteHide'}}><span class="style-action">Additional Note:</span> {{question.note}}</h5>
-{{/if}}
-<hr>
+<div class="row userQuestionBox">
+  <div class="col-xs-2">
+    <h4 class="style-author"> Ask by {{question.author}}</h4>
+  </div>
+  <div class="col-xs-10">
+    <h4>{{question.topic}}</h4>
+    <h5>Additional Note: {{question.note}}</h5>
+    <hr class="styleTopBottom">
+    {{update-question update="update" destroyQuestion="destroyQuestion" question=question}}
+  </div>
+</div>
 
 {{#each question.answers as |answer|}}
   <div class="row userAnswerBox">
