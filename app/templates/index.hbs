@@ -1,11 +1,18 @@
-<div class="container">
-  <h3>Message List</h3>
+<div>
+  {{#each model.questions as |question|}}
+    <div class="row userQuestionBox">
+      <div class="col-xs-7 userTopic">
+        <h4>{{#link-to 'question' question.id}}{{question.topic}}{{/link-to}}</h4>
+        <p>Ask by {{question.author}}</p>
+      </div>
 
-  <ul>
-    {{#each model.questions as |question|}}
-      <h5>{{#link-to 'question' question.id}}{{question.topic}}{{/link-to}} - by {{question.author}}</h5>
-    {{/each}}
-  </ul>
+      <div class="col-xs-4 userPost">
+        <p>Post date go here</p>
+      </div>
+    </div>
+  {{/each}}
+</div>
 
+<div class="col-xs-6">
   {{new-question saveQuestion="saveQuestion"}}
 </div>

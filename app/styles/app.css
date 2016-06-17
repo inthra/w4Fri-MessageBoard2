@@ -4,9 +4,9 @@ header h1 {
 }
 
 footer {
-  position: absolute;
-  bottom: 20px;
-  margin-left: 450px;
+  bottom: 10px;
+  right: 15px;
+  position: fixed;
 }
 
 .style-action:hover {
@@ -20,5 +20,24 @@ footer {
 }
 
 .navbar {
-  background-color: #e6f2ff;
+  background-color: #F8F874;
+}
+
+.userAnswerBox {
+  background-color: #d3d3c2;
+  margin-bottom: 3px;
+  width: 100%;
+}
+
+.userQuestionBox {
+  border-color: black;
+  border-style: solid;
+  margin-bottom: 3px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 100%;
+}
+
+.userTopic {
+  padding-left: 20px;
 }

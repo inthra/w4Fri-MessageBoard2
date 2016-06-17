@@ -4,21 +4,22 @@
   <h5 {{action 'noteHide'}}><span class="style-action">Additional Note:</span> {{question.note}}</h5>
 {{/if}}
 <hr>
-<ul>
-  {{#each question.answers as |answer|}}
-    <div class="row">
-      <div class="col-sm-2">
-        <p>Reply by {{answer.name}}</p>
-      </div>
 
-      <div class="col-sm-6">
-        <p>{{answer.reply}}</p>
-      </div>
-
-      <div class="col-sm-1">
-        <p {{action 'destroyAnswer' answer}} class="style-action">Delete</p>
-      </div>
-
+{{#each question.answers as |answer|}}
+  <div class="row userAnswerBox">
+    <div class="col-sm-2 userName">
+      <p></p>
+      <p>Reply by {{answer.name}}</p>
     </div>
-  {{/each}}
-</ul>
+
+    <div class="col-sm-7 userAnswer">
+      <p></p>
+      <p>{{answer.reply}}</p>
+    </div>
+
+    <div class="col-sm-1 pull-right userAnswerEdit">
+      <p></p>
+      <p {{action 'destroyAnswer' answer}} class="style-action">Delete</p>
+    </div>
+  </div>
+{{/each}}

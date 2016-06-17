@@ -9,8 +9,8 @@ export default Ember.Component.extend({
     },
     saveQuestion() {
       var params = {
-        topic: this.get('questionInput') ? this.get('questionInput') : "",
-        author: this.get('authorInput') ? this.get('authorInput') : "",
+        topic: this.get('questionInput') ? this.get('questionInput') : "No question",
+        author: this.get('authorInput') ? this.get('authorInput') : "Robot",
         note: this.get('noteInput') ? this.get('noteInput') : "",
       };
       this.set('addNewQuestion', false);
