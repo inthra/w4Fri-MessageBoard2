@@ -11,6 +11,7 @@ export default Ember.Component.extend({
         name: this.get('nameInput') ? this.get('nameInput') : "Robot",
         reply: this.get('replyInput') ? this.get('replyInput') : "Robot answer",
         question: this.get('question'),
+        votes: 0,
       };
       this.set('addNewAnswer', false);
       this.sendAction('saveAnswer', params);

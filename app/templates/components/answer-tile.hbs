@@ -1,4 +1,4 @@
-{{#each answers as |answer|}}
+{{#each sortedAnswer as |answer|}}
   <div class="row userAnswerBox">
     <div class="col-xs-2">
       <p></p>
@@ -12,6 +12,7 @@
 
     <div class="col-xs-3">
       <p></p>
+      {{upvote-answer upvote="upvote" answer=answer}}
       <p {{action 'destroyAnswer' answer}} class="style-action editBox">Delete</p>
     </div>
   </div>

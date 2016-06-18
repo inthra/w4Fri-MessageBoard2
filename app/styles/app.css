@@ -84,9 +84,16 @@ header h1{
 }
 
 #button-fav {
-  background-color: #E0F6AA;
+  background-color: #b3ffe6;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+#button-style-upvote {
+  background-color: #5bc0de;
+  border-radius: 3px;
+  border-style: none;
+  margin-bottom: 10px;
 }
 
 .avatar {

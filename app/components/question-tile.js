@@ -16,5 +16,8 @@ export default Ember.Component.extend({
     addToFavorite(question) {
       this.get('favoriteQuestion').add(question);
     },
+    upvote(answer) {
+      this.sendAction('upvote', answer);
+    },
   }
 });
