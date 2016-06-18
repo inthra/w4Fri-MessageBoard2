@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'moment';
 
 export default Ember.Component.extend({
   addNewQuestion: false,
@@ -12,6 +13,7 @@ export default Ember.Component.extend({
         topic: this.get('questionInput') ? this.get('questionInput') : "Robot question",
         author: this.get('authorInput') ? this.get('authorInput') : "Robot",
         note: this.get('noteInput') ? this.get('noteInput') : "",
+        date: moment().format('MMM Do YYYY, h:mm:ss a'),
       };
       this.set('addNewQuestion', false);
       this.sendAction('saveQuestion', params);

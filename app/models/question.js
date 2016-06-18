@@ -7,4 +7,5 @@ export default Model.extend({
   topic: attr(),
   note: attr(),
   answers: hasMany('answer', {async: true}),
+  date: attr(),
 });

@@ -8,7 +8,7 @@ export default Ember.Route.extend({
   actions: {
     saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
-      console.log(params);
+console.log(params);
       var question = params.question;
       question.get('answers').addObject(newAnswer);
       newAnswer.save().then(function() {
@@ -17,7 +17,6 @@ export default Ember.Route.extend({
       this.transitionTo('question', params.topic);
     },
     upvote(answer) {
-      console.log(answer);
       answer.set('votes', answer.get('votes') + 1);
       answer.save();
     },
