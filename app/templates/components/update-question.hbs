@@ -8,10 +8,7 @@
     </div>
   </form>
 {{else}}
-  <div class="pull-right">
-    <span {{action 'updateForm'}} class="style-action">EDIT</span>
-    <span> / </span>
-    <span {{action 'destroyQuestion' question}} class="style-action">DELETE</span>
-    <span> this question</span>
-  </div>
+  <span {{action 'updateForm'}} class="style-action">Edit</span>
+  <span> / </span>
+  <span {{action 'destroyQuestion' question}} class="style-action">Delete</span>
 {{/if}}

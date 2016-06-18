@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  favoriteQuestion: Ember.inject.service(),
 
   actions: {
     destroyAnswer(answer) {
@@ -13,6 +14,9 @@ export default Ember.Component.extend({
     },
     update(question, params) {
       this.sendAction('update', question, params);
-    }
+    },
+    addToFavorite(question) {
+      this.get('favoriteQuestion').add(question);
+    },
   }
 });

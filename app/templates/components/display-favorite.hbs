@@ -1,11 +1,11 @@
-<h3 class="sub-header">Active Threads</h3>
+<h3 class="sub-header">My Favorite Questions</h3>
 
-{{#each model.questions as |question|}}
+{{#each favoriteQuestion.threads as |question|}}
   <div class="row userQuestionBox">
     <div class="col-xs-7">
       <h4>
         {{question-popularity question}}<span> </span>
-        {{#link-to 'question' question.id}}{{question.topic}}{{/link-to}}
+        {{question.topic}}
       </h4>
       <h5>Ask by {{question.author}}</h5>
     </div>
@@ -16,5 +16,3 @@
     </div>
   </div>
 {{/each}}
-
-{{new-question saveQuestion="saveQuestion"}}

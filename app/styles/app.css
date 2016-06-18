@@ -2,19 +2,25 @@
   margin-bottom: 20px;
 }
 
-header h1 {
+header {
+  background-image: url("https://pixabay.com/static/uploads/photo/2015/10/29/14/38/web-1012467_960_720.jpg");
+}
+
+header h1{
+  text-align: center;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  color: #74AE01;
+}
+
+.sub-header {
   text-align: center;
   margin-bottom: 15px;
 }
 
-footer {
-  bottom: 10px;
-  right: 20px;
-  position: fixed;
-}
-
 .style-action:hover {
   color: #3399ff;
+  font-weight: bold;
 }
 
 .style-author {
@@ -24,6 +30,7 @@ footer {
 
 .navbar {
   background-color: #F8F874;
+  border-radius: 0px;
 }
 
 .userAnswerBox {
@@ -60,4 +67,10 @@ footer {
   border-style: none;
   color: white;
   padding: 10px;
+}
+
+#button-fav {
+  background-color: #E0F6AA;
+  padding-left: 15px;
+  padding-right: 15px;
 }
