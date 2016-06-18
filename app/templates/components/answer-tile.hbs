@@ -1,0 +1,18 @@
+{{#each answers as |answer|}}
+  <div class="row userAnswerBox">
+    <div class="col-xs-2">
+      <p></p>
+      <p>Reply by {{answer.name}}</p>
+    </div>
+
+    <div class="col-xs-7">
+      <p></p>
+      <p>{{answer.reply}}</p>
+    </div>
+
+    <div class="col-xs-3">
+      <p></p>
+      <p {{action 'destroyAnswer' answer}} class="style-action editBox">Delete</p>
+    </div>
+  </div>
+{{/each}}
