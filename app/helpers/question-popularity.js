@@ -6,6 +6,10 @@ export function questionPopularity(params) {
 
   if (answerLength >= 5) {
     return Ember.String.htmlSafe('<span class="glyphicon glyphicon-fire"></span>');
+  } else if (answerLength >= 1) {
+    return Ember.String.htmlSafe('<span class="glyphicon glyphicon-pencil"></span>');
+  } else if (answerLength < 1) {
+    return Ember.String.htmlSafe('<span class="glyphicon glyphicon-question-sign"></span>');
   }
 }
 

@@ -20,7 +20,8 @@ header h1{
 
 .style-action:hover {
   color: #3399ff;
-  font-weight: bold;
+  /*font-weight: bold;*/
+  text-shadow: 3px 3px 5px gray;
 }
 
 .style-author {
@@ -39,6 +40,11 @@ header h1{
   width: 100%;
 }
 
+.editBox {
+  float: right;
+  padding-right: 10px;
+}
+
 .userQuestionBox {
   background-color: #FFD1CF;
   margin-top: 5px;
@@ -46,6 +52,10 @@ header h1{
   padding-top: 2px;
   padding-bottom: 5px;
   width: 100%;
+}
+
+#favorite-question {
+  background-color: #b3ffe6;
 }
 
 .styleTopBottom {
@@ -61,6 +71,10 @@ header h1{
   color: #E60B00;
 }
 
+.glyphicon-pencil {
+  color: #00994d;
+}
+
 #add-button {
   background-color: #5bc0de;
   border-radius: 3px;
@@ -73,4 +87,9 @@ header h1{
   background-color: #E0F6AA;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.avatar {
+  padding-top: 10px;
+  height: 60px;
 }

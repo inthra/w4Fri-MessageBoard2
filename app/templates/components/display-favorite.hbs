@@ -1,8 +1,12 @@
 <h3 class="sub-header">My Favorite Questions</h3>
 
 {{#each favoriteQuestion.threads as |question|}}
-  <div class="row userQuestionBox">
-    <div class="col-xs-7">
+  <div class="row userQuestionBox" id="favorite-question">
+    <div class="col-xs-1">
+      {{avatar-generator question}}
+    </div>
+
+    <div class="col-xs-5">
       <h4>
         {{question-popularity question}}<span> </span>
         {{question.topic}}
@@ -10,8 +14,11 @@
       <h5>Ask by {{question.author}}</h5>
     </div>
 
-    <div class="col-xs-4">
+    <div class="col-xs-3">
       <h5>Post date go here</h5>
+    </div>
+
+    <div class="col-xs-2">
       <h5>Number of answers go here</h5>
     </div>
   </div>
