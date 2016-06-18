@@ -4,9 +4,6 @@ export default Ember.Component.extend({
   favoriteQuestion: Ember.inject.service(),
 
   actions: {
-    destroyAnswer(answer) {
-      this.sendAction('destroyAnswer', answer);
-    },
     destroyQuestion(question) {
       this.sendAction('destroyQuestion', question);
     },
@@ -15,6 +12,9 @@ export default Ember.Component.extend({
     },
     addToFavorite(question) {
       this.get('favoriteQuestion').add(question);
+    },
+    destroyAnswer(answer) {
+      this.sendAction('destroyAnswer', answer);
     },
     upvote(answer) {
       this.sendAction('upvote', answer);

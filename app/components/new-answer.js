@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'moment';
 
 export default Ember.Component.extend({
   addNewAnswer: false,
@@ -12,6 +13,7 @@ export default Ember.Component.extend({
         reply: this.get('replyInput') ? this.get('replyInput') : "Robot answer",
         question: this.get('question'),
         votes: 0,
+        date: moment().format('MMM Do YYYY, h:mm:ss a'),
       };
       this.set('addNewAnswer', false);
       this.sendAction('saveAnswer', params);

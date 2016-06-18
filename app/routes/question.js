@@ -6,20 +6,6 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    saveAnswer(params) {
-      var newAnswer = this.store.createRecord('answer', params);
-console.log(params);
-      var question = params.question;
-      question.get('answers').addObject(newAnswer);
-      newAnswer.save().then(function() {
-        return question.save();
-      });
-      this.transitionTo('question', params.topic);
-    },
-    upvote(answer) {
-      answer.set('votes', answer.get('votes') + 1);
-      answer.save();
-    },
     update(question, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
@@ -38,8 +24,22 @@ console.log(params);
       });
       this.transitionTo('index');
     },
+    saveAnswer(params) {
+      var newAnswer = this.store.createRecord('answer', params);
+console.log(params);
+      var question = params.question;
+      question.get('answers').addObject(newAnswer);
+      newAnswer.save().then(function() {
+        return question.save();
+      });
+      this.transitionTo('question', params.topic);
+    },
     destroyAnswer(answer) {
       answer.destroyRecord();
+    },
+    upvote(answer) {
+      answer.set('votes', answer.get('votes') + 1);
+      answer.save();
     },
   }
 });

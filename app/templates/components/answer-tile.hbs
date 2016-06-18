@@ -1,17 +1,18 @@
 {{#each sortedAnswer as |answer|}}
   <div class="row userAnswerBox">
     <div class="col-xs-2">
-      <p></p>
       <p>Reply by {{answer.name}}</p>
     </div>
 
-    <div class="col-xs-7">
-      <p></p>
+    <div class="col-xs-5">
       <p>{{answer.reply}}</p>
     </div>
 
     <div class="col-xs-3">
-      <p></p>
+      <p>{{answer.date}}</p>
+    </div>
+
+    <div class="col-xs-2">
       {{upvote-answer upvote="upvote" answer=answer}}
       <p {{action 'destroyAnswer' answer}} class="style-action editBox">Delete</p>
     </div>

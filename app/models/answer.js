@@ -7,4 +7,5 @@ export default Model.extend({
   reply: attr(),
   question: belongsTo('question', { async: true}),
   votes: attr(),
+  date: attr(),
 });
