@@ -12,9 +12,9 @@ export function avatarGenerator(params) {
 
   var imageRandom3 = '<img src="http://www.gravatar.com/avatar/7805b3707380886a822056f3b0456839?s=96&d=http%3A%2F%2Fcommunity.playstarbound.com%2Fstyles%2Fsimplicity_gray%2Fxenforo%2Favatars%2Favatar_male_m.png" alt="Avatar image" class="img-responsive avatar">';
 
-  if (avatarAuthorName = "Robot") {
+  if (avatarAuthorName === "Robot") {
     return Ember.String.htmlSafe(imageRobot);
-  } else if (avatarAuthorName.length >= 6) {
+  } else if (avatarAuthorName.length >= 7) {
     return Ember.String.htmlSafe(imageRandom1);
   } else if (avatarAuthorName.length >= 4) {
     return Ember.String.htmlSafe(imageRandom2);
